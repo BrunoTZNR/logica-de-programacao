@@ -11,6 +11,7 @@ int main (void){
     for ( i = 0 ; i <= 1 ; i++) {
 
         printf("Digite o %iº número: ", i+1);
+        printf("Digite o %iº número: ", i+1);
         scanf("%f", &n[i]);
 
     }
