@@ -5,25 +5,43 @@ int main (void){
 
     setlocale(LC_ALL,"Portuguese");
 
-    float n[2];
+    float n[3];
     int i = 0;
 
-    for ( i = 0 ; i <= 1 ; i++) {
+    for ( i = 0 ; i <= 2 ; i++) {
 
-        printf("Digite o %iº número: ", i+1);
-        printf("Digite o %iº número: ", i+1);
+        printf("Digite o %i� n�mero: ", i+1);
         scanf("%f", &n[i]);
 
     }
 
-    // printf("Digite o primeiro número: ");
-    // scanf("%f", &n[0]);
-
-    // printf("Digite o segundo número: ");
-    // scanf("%f", &n[1]);
+	if ( n[0] == n[1] || n[1] == n[2] ) {
+		
+		if ( n[0] == n[1] ) {
+			
+			puts("Os n�meros 1 e 2 s�o iguais!");
+			
+		} else if ( n[0] == n[2] ) {
+			
+			puts("Os n�meros 1 e 3 s�o iguais!");
+			
+		} else if ( n[1] == n[2] ) {
+			
+			puts("Os n�meros 2 e 3 s�o iguais!");
+			
+		} else {
+			
+			puts("Os tr�s n�meros s�o iguais!");
+			
+		}
+		
+	}
 	
-	n[0]>n[1]? printf("\nO número: %.2f é a maior número dentre os números digitados!", n[0]) : printf("\nO número: %.2f é a maior número dentre os números digitados!", n[1]);
-	n[0]<n[1]? printf("\nO número: %.2f é a menor número dentre os números digitados!", n[0]) : printf("\nO número: %.2f é a menor número dentre os números digitados!", n[1]);
+	if ( n[0] > n[1] && n[0] > n[2] ) {
+			
+			
+			
+	}
 
     return (0);
 }

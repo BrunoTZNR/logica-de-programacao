@@ -3,11 +3,12 @@
 
 using namespace std;
 
+float segReta[3];
+
 int main() {
 	
 	setlocale(LC_ALL,"Portuguese");
 	
-	float segReta[3];
 	int i;
 	
 	for( i = 0 ; i <= 2 ; i++ ) {
@@ -23,10 +24,7 @@ int main() {
 			
 			cout << "O triângulo formado é chamado de equilátero." << endl;
 			
-		} else if ( 
-		(segReta[0] == segReta[1] && segReta[1] != segReta[2]) ||
-		(segReta[0] != segReta[1] && segReta[1] == segReta[2]) ||
-		(segReta[1] != segReta[0] && segReta[0] != segReta[2]) ){
+		} else if ( segReta[0]==segReta[1] || segReta[0]==segReta[2] || segReta[1]==segReta[2] ){
 			
 			cout << "O triângulo formado é chamado de isósceles." << endl;
 			
