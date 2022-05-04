@@ -8,7 +8,11 @@ using namespace std;
 int main(){
 	setlocale(LC_ALL,"Portuguese");
 	
+	float d, v=1, t=2, a=3;
 	
+	d = v * t + (a * pow(t,2) / 2);
+	
+	cout<<"D = "<<v<<" x "<<t<<" + ("<<a<<" x "<<t<<"^2 / 2) = "<<d<<endl;
 	
 	system("pause");
 	return 0;
